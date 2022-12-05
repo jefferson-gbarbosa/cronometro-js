@@ -1,0 +1,55 @@
+/* globais */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+}
+/* timer */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container h1{
+    font-size: 4.5rem;
+    color: #f9f9f9;
+    margin-bottom: 2rem;
+}
+/* buttons */
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  
+}
+.buttons .btn-playpause,
+.buttons .btn-stop{
+   width: 60px;
+   height: 60px;
+   border: none;
+   outline: none;
+   background-color: #212121;
+   border-radius: 50%;
+   cursor: pointer;
+}
+.buttons .btn-playpause i,
+.buttons .btn-stop i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1013be;
+    font-size: 2.8rem;
+    background: transparent;
+}
+.buttons .btn-stop{
+    display: none;
+}
